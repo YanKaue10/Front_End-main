@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitações de Instalação</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Solicitações de Instalação</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="professor-solicitacoes.html">Solicitações</a></li>
+                <li><a href="professor-laboratorio.html">Laboratório</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <form id="solicitacao-form">
+                <label for="professor">Professor:</label>
+                <select id="professor"></select>
+                
+                <label for="software">Software:</label>
+                <select id="software"></select>
+
+                <label for="laboratorio">Laboratório:</label>
+                <input type="text" id="laboratorio" required>
+
+                <label for="data">Data de Uso:</label>
+                <input type="date" id="data" required>
+
+                <button type="submit">Solicitar</button>
+                <p id="mensagem-solicitacao"></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
