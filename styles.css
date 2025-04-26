@@ -145,6 +145,7 @@ th {
     border-radius: 4px;
     cursor: pointer;
 }
+
 .login-form {
     background-color: #fff;
     padding: 20px;
@@ -153,45 +154,40 @@ th {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 50px auto; /* Centraliza o formulário na página */
 }
+/* cabeçalho solicitações admin */
+#cabecalho-solicitacoes {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 1fr;
+    gap: 10px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
 
-.login-form h2 {
-    margin-bottom: 20px;
-    font-size: 20px;
+#cabecalho-solicitacoes div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lista-solicitacoes .solicitacao-item {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    margin-top: 10px;
+    align-items: center;
     text-align: center;
 }
 
-form label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-    font-size: 14px; /* Ajusta o tamanho da fonte dos labels */
-}
-
-form input {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 14px; /* Ajusta o tamanho da fonte do input */
-}
-
-form button {
-    width: 100%;
-    padding: 10px;
-    background-color: #2c3e50;
-    color: white;
-    border: none;
-    margin-top: 15px;
+#lista-solicitacoes .solicitacao-item input[type="checkbox"] {
+    transform: scale(1.2);
     cursor: pointer;
-    font-size: 14px; /* Ajusta o tamanho da fonte do botão */
-    border-radius: 4px;
 }
-
-form button:hover {
-    background-color: #1a252f;
-}
-
 
 

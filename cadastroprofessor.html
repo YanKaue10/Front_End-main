@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro Professor</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -26,13 +25,16 @@
             <form id="professor-form">
                 <label for="nome-prof">Nome:</label>
                 <input type="text" id="nome-prof" required>
-    
+            
                 <label for="escola">Escola:</label>
                 <input type="text" id="escola" required>
-    
+            
+                <input type="hidden" id="indice-edicao"> <!-- campo oculto -->
+                
                 <button type="submit">Cadastrar</button>
                 <div id="mensagem-professor"></div>
             </form>
+            
         </section>
     
         <section class="form-section">
@@ -40,5 +42,6 @@
             <ul id="lista-professores"></ul>
         </section>
     </main>
+    <script src="admin.js"></script>
 </body>
 </html>
