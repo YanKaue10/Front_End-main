@@ -1,0 +1,51 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Software</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastrar Software</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="admin-cadastro.html">Cadastrar Software</a></li>
+                <li><a href="admin-solicitacoes.html">Solicitações</a></li>
+                <li><a href="cadastroprofessor.html">Cadastrar Professor</a></li>
+                <li><a href="admin-lista.html">Lista de Softwares</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <form id="software-form">
+                <input type="hidden" id="index-edicao">
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
+
+                <label for="link">Link para instalação:</label>
+                <input type="url" id="link" required>
+
+                <label for="versao">Versão:</label>
+                <input type="text" id="versao" required>
+
+                <label for="tipo">Tipo:</label>
+                <select id="tipo">
+                    <option value="livre">Livre</option>
+                    <option value="proprietario">Proprietário</option>
+                </select>
+
+                <label for="data">Data da Solicitação:</label>
+                <input type="date" id="data" required>
+
+                <button type="submit">Cadastrar</button>
+                <p id="mensagem"></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="admin.js"></script>

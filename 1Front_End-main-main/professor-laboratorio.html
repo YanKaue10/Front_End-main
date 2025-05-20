@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratório</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Laboratório</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="professor-solicitacoes.html">Solicitações</a></li>
+                <li><a href="professor-laboratorio.html">Laboratório</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Softwares Disponíveis</h2>
+            <ul id="lista-softwares"></ul>
+        </section>
+    
+        <!-- Nova seção para exibir os checkboxes dos softwares disponíveis -->
+        <section class="form-section">
+            <h2>Confirmação de Uso</h2>
+            <div id="checkboxes-softwares"></div> <!-- Aqui vão aparecer os checkboxes -->
+            <button id="enviar-softwares">Enviar Softwares Usados</button>
+            <p id="mensagem-envio-softwares" style="color: green; margin-top: 10px;"></p>
+
+            <h2>Enviar Reclamação</h2>
+            <form id="reclamacao-form">
+                <textarea id="texto-reclamacao" placeholder="Digite sua reclamação aqui..." required style="width: 100%; height: 100px;"></textarea><br>
+                <button type="submit">Enviar Reclamação</button>
+            </form>
+            <p id="mensagem-reclamacao" style="color: green; margin-top: 10px;"></p>
+        </section>
+    </main>
+    <script src="professor.js" defer></script>
+</body>
+</html>

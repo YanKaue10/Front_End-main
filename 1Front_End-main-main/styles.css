@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #34495e;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #2c3e50;
+    border-radius: 4px;
+}
+
+main {
+    padding: 20px;
+}
+
+.form-section {
+    max-width: 600px;
+    margin: 10px auto;
+
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #1a252f;
+}
+
+#lista-softwares {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+#lista-softwares li {
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+#lista-professores {
+    list-style-type: none; /* Remove as bolinhas */
+    padding: 0;
+}
+
+#lista-professores li {
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.professor-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f8;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.professor-item span {
+    flex: 1;
+}
+
+.professor-item button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #2c3e50;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-form {
+    background-color: #fff;
+    padding: 20px;
+    width: 300px; /* Ajusta a largura do formulário */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 50px auto; /* Centraliza o formulário na página */
+}
+/* cabeçalho solicitações admin */
+#cabecalho-solicitacoes {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 1fr;
+    gap: 10px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#cabecalho-solicitacoes div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lista-solicitacoes .solicitacao-item {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+#lista-solicitacoes .solicitacao-item input[type="checkbox"] {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.reclamacao-item {
+    background-color: #f0f0f0;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
